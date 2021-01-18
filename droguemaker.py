@@ -87,7 +87,7 @@ if (writeFile):
     with open(outputFile, 'w') as f:
         f.write(str(len(x))+'\n')
         f.write('LABEL, RELEASE TIME STEP, X, Y, Z\n')
-        for i in range(0, len(x)-1):
+        for i in range(0, len(x)):
             print('%d, %d, %9.2f, %9.2f, %9.2f'%(lab[i], tRelease[i],
                   x[i], y[i], z[i]), file=f)
 
